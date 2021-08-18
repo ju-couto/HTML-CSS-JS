@@ -1,4 +1,2 @@
-# Olá, Mundo!
- Primeiro repositório do curso de Git e GitHub
- 
- Essa linha foi adicionada diretamente no site
+# Projetos em HTML/CSS/JS
+ Estudos em HTML, CSS e JavaScript
