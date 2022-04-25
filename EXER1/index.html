@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica de Pogramação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+    <input type="button" value="+" id="sum">
+    <input type="button" value="-" id="minus">
+    <input type="button" value="*" id="mult">
+    <input type="button" value="/" id="divide">
+    <div id="output"></div>
+
+<script>
+    let sum = document.querySelector("#sum")
+    let minus= document.querySelector("#minus")
+    let mult= document.querySelector("#mult")
+    let divide = document.querySelector("#divide")
+    let output= document.querySelector("#output")
+    let result= parseFloat(prompt("Digite um número"))
+    output.innerHTML = result
+    sum.addEventListener("click",function (){
+        secNum= parseInt(prompt("Digite outro número"))
+        result += secNum
+        output.innerHTML= result
+    })
+    minus.addEventListener("click",function (){
+        secNum = parseInt(prompt("Digite outro número"))
+        result-=secNum
+        output.innerHTML= result
+    })
+    mult.addEventListener("click",function (){
+        secNum = parseInt(prompt("Digite outro número"))
+        result*= secNum
+        output.innerHTML= result
+    })
+    divide.addEventListener("click",function (){
+        secNum= parseInt(prompt("Digite outro número"))
+        result/=secNum
+        output.innerHTML= result
+    })
+</script>
+</body>
+</html>
