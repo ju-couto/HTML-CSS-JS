@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lógica de Pogramação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+    <input type="button" value="+" onclick="calc('+')">
+    <input type="button" value="-" onclick="calc('-')">
+    <input type="button" value="*" onclick="calc('*')">
+    <input type="button" value="/" onclick="calc('/')">
+    <div id="output"></div>
+
+<script>
+    let output= document.querySelector("#output")
+    let result= parseFloat(prompt("Digite um número"))
+    output.innerHTML = result
+    function calc(operator){
+        let secNum= parseInt(prompt("Digite outro número"))
+        switch (operator){
+            case '+':
+                result += secNum
+                break
+            case '-':
+                result-=secNum
+                break
+            case "*":
+                result*=secNum
+                break
+            case "/":
+                result/=secNum
+                break
+            default:
+                alert("Esse operador não é valido")
+
+        }
+        output.innerHTML = result
+    }
+
+</script>
+</body>
+</html>
